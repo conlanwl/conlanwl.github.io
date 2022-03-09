@@ -1201,11 +1201,12 @@ th {
   height: 20px;
 }
 .swiper-container {
-  overflow: hidden;
+  width: 100%;
+  max-width: 830px;
+  margin: 10px;
 }
 .swiper-wrapper {
   width: 600px;
-  position: relative;
   z-index: 1;
   display: flex;
   margin: 10px;
@@ -1223,10 +1224,6 @@ th {
 .img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-}
-.img image {
-  width: 583px;
 }
 .post-container .gist table {
   width: auto;
