@@ -1200,16 +1200,18 @@ th {
 .post-container .highlight .line {
   height: 20px;
 }
-.post-container .swiper-container {
-  width: 100%;
-  height: 300px;
+.swiper-container {
+  width: 620px;
+  height: 80rpx;
   border-radius: 10px;
+  margin: 10px;
 }
-.post-container .swiper-container .swiper-wrapper {
+.swiper-container .swiper-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80rpx;
   z-index: 1;
+  border-radius: 10px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1224,11 +1226,11 @@ th {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
-.post-container .swiper-container .swiper-wrapper .swiper-slide .img {
+.swiper-container .swiper-wrapper .swiper-slide .img {
   text-align: center;
   font-size: 18px;
   width: 100%;
-  height: 100%;
+  height: 80rpx;
   border-radius: 10px;
 /* Center slide text vertically */
   display: -webkit-box;
@@ -1244,9 +1246,10 @@ th {
   -webkit-align-items: center;
   align-items: center;
 }
-.post-container .swiper-container .swiper-wrapper .swiper-slide .img imgae {
-  width: 600px;
-  height: 100%;
+.swiper-container .swiper-wrapper .swiper-slide .img imgae {
+  width: 100%;
+  height: 80rpx;
+  border-radius: 10px;
 }
 .post-container .gist table {
   width: auto;
