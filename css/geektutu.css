@@ -1358,6 +1358,8 @@ main {
   margin: 10px 10px 0px 0px;
   border-radius: 10px;
   background-color: #fff;
+/* justify-content: center; */
+  align-items: center;
 }
 .post-container > .col-xs-12 {
   padding: 0;
