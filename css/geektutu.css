@@ -1325,7 +1325,7 @@ main {
   background: #fff;
   width: 100%;
   max-width: 830px;
-  padding: 0 5px;
+  padding: 0 15px;
   margin: 30px 30px 30px 30px;
   border-radius: 15px;
 }
@@ -1343,7 +1343,7 @@ main {
     width: 750px;
   }
   .post-container {
-    padding: 10px 10px !important;
+    padding: 10px 30px !important;
   }
   .post-container article {
     padding: 0 !important;
