@@ -1343,7 +1343,7 @@ main {
     width: 750px;
   }
   .post-container {
-    padding: 10px 30px !important;
+    padding: 10px 10px !important;
   }
   .post-container article {
     padding: 0 !important;
