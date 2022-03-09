@@ -1200,6 +1200,54 @@ th {
 .post-container .highlight .line {
   height: 20px;
 }
+.post-container .swiper-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.post-container .swiper-container .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.post-container .swiper-container .swiper-wrapper .swiper-slide .img {
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+/* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.post-container .swiper-container .swiper-wrapper .swiper-slide .img imgae {
+  width: 600px;
+  height: 100%;
+}
 .post-container .gist table {
   width: auto;
 }
