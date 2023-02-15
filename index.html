@@ -21,7 +21,7 @@
         qqUrl: "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=10001&ac=B4C5BACD47FE6936D4B6DD29D866E1XXXAEA141B073F9DD94DE6404509CEEXXX&n=xxxx&f=wallet",
         
         /* 在以下【双引号】中粘贴你的微信收款链接 */ 
-        wechatUrl: "wxp://f2f0s54xz3nvBV53mUlXxqd6gQ_U08Y8nyRsoY8vRecwTfM",
+        wechatUrl: "https://payapp.wechatpay.cn/qrpay/order/home2?key=idc_CHNDVI_9hECYjNZIWOUyJQdGBN4CA--",
         
         /* 在以下【双引号】中粘贴你的支付宝收款链接 */ 
         aliUrl: "https://qr.alipay.com/stx18076z96b7xfff4bzu79"
@@ -92,7 +92,7 @@
     </style>
 </head>
 <body>
-  <!--  <!-- 万能收款码展示区域 -->
+    <!-- 万能收款码展示区域 -->
     <div class="code-item" id="code-all">
         <div class="code-title"></div>
         <div class="code-area">
@@ -117,7 +117,7 @@
             <img id="wechat-url" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=">
         </div>
         <div class="code-footer">长按以上二维码向我付款</div>
-    </div> -->
+    </div> 
     
     <script>
     /* 二维码生成 https://github.com/lifthrasiir/qr.js/ */ 
@@ -137,11 +137,7 @@
        window.location.href = setting.wechatUrl; 
        /* document.getElementById("wechat-url").src = QRCode.generatePNG(setting.wechatUrl, { margin: 0 });
         document.getElementById("code-wechat").style.display = "block"; */
-    } else {
-        /* 其它，显示“万能码” */ 
-        document.getElementById("page-url").src = QRCode.generatePNG(window.location.href, { margin: 0 });
-        document.getElementById("code-all").style.display = "block";
-    }
+    } 
     </script>
 
 </body>
