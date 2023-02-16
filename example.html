@@ -3,8 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>支付</title>
-        <script src="pay.min.js"></script>
-        <!--<script src="pay.noqq.js"></script>-->
+        <!--<script src="pay.min.js"></script>-->
+        <script src="pay.noqq.js"></script>
         <script src="config.js"></script>
     </head>
     <body>
@@ -13,10 +13,10 @@
         <script>
     if(navigator.userAgent.match(/Alipay/i)) {
         /* 支付宝 */ 
-        window.location.href = setting.aliUrl; 
+        window.location.href = pay_set.aliUrl; 
     } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
         /* 微信 */ 
-       window.location.href = setting.wechatUrl; 
+       window.location.href = pay_set.wechatUrl; 
        /* document.getElementById("wechat-url").src = QRCode.generatePNG(setting.wechatUrl, { margin: 0 });
         document.getElementById("code-wechat").style.display = "block"; */
     } else {
