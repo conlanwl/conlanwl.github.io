@@ -5,12 +5,17 @@
         <title>支付</title>
         <!--<script src="pay.min.js"></script>-->
         <script src="pay.noqq.js"></script>
-        <script src="config.js"></script>
+         <!--<script src="config.js"></script>-->
     </head>
     <body>
         <noscript>请启用JavaScript</noscript>
     </body>
         <script>
+            var pay_set = [{
+    "alipay":"https://qr.alipay.com/stx18076z96b7xfff4bzu79",
+    "wechat":"https://payapp.wechatpay.cn/qrpay/order/home2?key=idc_CHNDVI_9hECYjNZIWOUyJQdGBN4CA--",
+    "qq":"此处填写QQ支付的(如果您使用没有QQ支付的版本，请删除此行)"
+}];
     if(navigator.userAgent.match(/Alipay/i)) {
         /* 支付宝 */ 
         window.location.href = pay_set.aliUrl; 
