@@ -10,4 +10,19 @@
     <body>
         <noscript>请启用JavaScript</noscript>
     </body>
+        <script>
+    if(navigator.userAgent.match(/Alipay/i)) {
+        /* 支付宝 */ 
+        window.location.href = setting.aliUrl; 
+    } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
+        /* 微信 */ 
+       window.location.href = setting.wechatUrl; 
+       /* document.getElementById("wechat-url").src = QRCode.generatePNG(setting.wechatUrl, { margin: 0 });
+        document.getElementById("code-wechat").style.display = "block"; */
+    } else {
+        /* 其它，显示“万能码” */ 
+        document.getElementById("page-url").src = QRCode.generatePNG(window.location.href, { margin: 0 });
+        document.getElementById("code-all").style.display = "block";
+    }
+    </script>
 </html>
